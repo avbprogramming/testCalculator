@@ -40,10 +40,10 @@ public class choice {
                  answer = decimalToOctal.toDecimal(firstNum);
                 break;
             case (11):
-                 answer = binaryToHex.toHex(firstNum);
+                 answer = decimalToHex.toHex(firstNum);
                 break;
             case (12):
-                 answer = binaryToHex.toHex(firstNum);
+                 answer = hexToDecimal.toDecimal(firstNum);
                 break;
             default:
                 System.out.println("Выбор не верный. ");

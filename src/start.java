@@ -16,8 +16,8 @@ public class start {
         System.out.println("8 ---> из 16-ой в 2-ую СИ.");
         System.out.println("9 ---> из 10-ой в 8-ую СИ.");
         System.out.println("10 ---> из 8-ой в 10-ую СИ.");
-        System.out.println("11 ---> из 16-ой в 10-ую СИ.");
-        System.out.println("12 ---> из 10-ой в 16-ую систему СИ.");
+        System.out.println("11 ---> из 10-ой в 16-ую СИ.");
+        System.out.println("12 ---> из 16-ой в 10-ую СИ.");
         System.out.print("Какую операцию над числами вы хотели бы провести? ");
         int num = sc.nextInt();
         if (num <= 4) {
