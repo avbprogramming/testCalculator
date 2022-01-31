@@ -25,25 +25,25 @@ public class choice {
                 answer = binaryToDecimal.toDecimal(firstNum);
                 break;
             case (6):
-                // answer = binaryToHex.toHex(firstNum);
+                answer = decimalToBinary.toBinary(firstNum);
                 break;
             case (7):
                 answer = binaryToHex.toHex(firstNum);
                 break;
             case (8):
-                 answer = heXtoBinary.toBinary(firstNum);
+                answer = heXtoBinary.toBinary(firstNum);
                 break;
             case (9):
-                // answer = binaryToHex.toHex(firstNum);
+                 answer = octalToDecimal.toOctal(firstNum);
                 break;
             case (10):
-                // answer = binaryToHex.toHex(firstNum);
+                 answer = decimalToOctal.toDecimal(firstNum);
                 break;
             case (11):
-                // answer = binaryToHex.toHex(firstNum);
+                 answer = binaryToHex.toHex(firstNum);
                 break;
             case (12):
-                // answer = binaryToHex.toHex(firstNum);
+                 answer = binaryToHex.toHex(firstNum);
                 break;
             default:
                 System.out.println("Выбор не верный. ");

@@ -26,11 +26,15 @@ public class decimalToBinary {
         System.out.println("Десятичное число " + decimalNumber + " равно двоичному числу " + toBinary(decimalNumber));
     }
 */
-    public static String toBinary(int decimalNumber) {
-        if (decimalNumber <= 0) {
-            String a = "";
-            return a;
+    public static String toBinary(String firstNum) {
+        if (!check.checkEmptyString(firstNum)){
+            return "Пустая строка";
         }
+        if (!check.checkDecimal(firstNum)){
+            return "В строке есть неверные символы";
+        }
+        int decimalNumber = Integer.parseInt(firstNum);
+
         int biNum;
         String tempBi = "";
         while (decimalNumber != 0) {
@@ -40,5 +44,4 @@ public class decimalToBinary {
         }
         return tempBi;
     }
-
 }
