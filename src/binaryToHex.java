@@ -29,14 +29,14 @@ public class binaryToHex {
         if (!check.checkEmptyString(binaryNumber)){
             return "Пустая строка";
         }
-        // проверка входной строки на содердание только 0 и 1
+        // проверка входной строки на содержание только 0 и 1
         if (!check.checkBinary(binaryNumber)){
             return "В строке есть неверные символы";
         }
-        // перевод входной строки в массив симоволов
+        // перевод входной строки в массив символов
         char[] numInChar = binaryNumber.toCharArray();
         int block = 4;
-        // создание массива для доведния общей длины массивы кратности 4, согласно рекомендации
+        // создание массива для доведения общей длины массивы кратности 4, согласно рекомендации
         char[] numInCharAdd = new char[numInChar.length];
         // Проверяю длину строки, полученной входящим параметром. Она должна быть кратна 4.
         int checkLengthOfString = (numInChar.length % block);

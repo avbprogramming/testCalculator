@@ -28,15 +28,12 @@ public class binaryToDecimal {
         System.out.println("Двоичное число " + binaryNumber + " равно десятичному числу " + toDecimal(binaryNumber));
     }
 */
-
     public static String toDecimal(String binaryNumber) {
-
         if (!check.checkEmptyString(binaryNumber)) {
             return "Пустая строка";
         }
         if (!check.checkBinary(binaryNumber)) {
             return "Введены не верные данные";
-
         }
         int decimalNum = 0;
 

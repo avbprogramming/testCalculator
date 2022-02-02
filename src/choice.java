@@ -17,7 +17,6 @@ public class choice {
                 System.out.println("Выбор не верный. ");
         }
     }
-
     public static String choice2(int choice, String firstNum) {
         String answer = "";
         switch (choice) {
@@ -45,7 +44,8 @@ public class choice {
             case (12):
                  answer = hexToDecimal.toDecimal(firstNum);
                 break;
-            default:
+            case (13): break;
+                default:
                 System.out.println("Выбор не верный. ");
         }
         return answer;
