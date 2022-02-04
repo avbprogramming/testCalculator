@@ -5,7 +5,7 @@ public class mathFunction {
 
         } else {
 
-            if (check.checkDecimal(firstNum, secondNum) == false) {
+            if (check.checkDecimalMath(firstNum, secondNum) == false) {
                 System.out.println("Введенные данные не верны");
             } else {
                 int num1 = Integer.parseInt(firstNum);
@@ -22,7 +22,7 @@ public class mathFunction {
 
         } else {
 
-            if (!check.checkDecimal(firstNum, secondNum)) {
+            if (!check.checkDecimalMath(firstNum, secondNum)) {
                 System.out.println("Введенные данные не верны");
             } else {
                 int num1 = Integer.parseInt(firstNum);
@@ -34,18 +34,13 @@ public class mathFunction {
     }
 
     public static void multiply(String firstNum, String secondNum) {
-        if (!check.checkEmptyString(firstNum, secondNum)) {
-            System.out.println("Введена пустая строка(и)");
-
-        } else {
-
             if (!check.checkEmptyString(firstNum, secondNum)) {
                 System.out.println("Введена пустая строка(и)");
 
             } else {
 
             }
-            if (!check.checkDecimal(firstNum, secondNum)) {
+            if (!check.checkDecimalMath(firstNum, secondNum)) {
                 System.out.println("Введённые данные не верны");
             } else {
                 int num1 = Integer.parseInt(firstNum);
@@ -54,7 +49,7 @@ public class mathFunction {
                 System.out.println(answer);
             }
         }
-    }
+
 
     public static void divide(String firstNum, String secondNum) {
         if (!check.checkEmptyString(firstNum, secondNum)) {
@@ -62,7 +57,7 @@ public class mathFunction {
 
         } else {
 
-            if (!check.checkDecimal(firstNum, secondNum)) {
+            if (!check.checkDecimalMath(firstNum, secondNum)) {
                 System.out.println("Введенные данные не верны");
             } else {
                 int num1 = Integer.parseInt(firstNum);
