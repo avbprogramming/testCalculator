@@ -17,6 +17,12 @@ public class check {
         }
         return true;
     }
+    public static boolean checkEmptyString(String firstNum, String secondNum) {
+        if ((firstNum == null || firstNum.isEmpty()) || (secondNum == null || secondNum.isEmpty())){
+            return false;
+        }
+        return true;
+    }
 
     public static boolean checkBinary(String firstNum) {
         char[] firstNumCharArray = firstNum.toCharArray();

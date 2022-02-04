@@ -1,5 +1,7 @@
 public class choice {
+
     public static void choice(int choice, String firstNum, String secondNum) {
+
         switch (choice) {
             case (1):
                 mathFunction.plus(firstNum, secondNum);
@@ -14,7 +16,7 @@ public class choice {
                 mathFunction.divide(firstNum, secondNum);
                 break;
             default:
-                System.out.println("Выбор не верный. ");
+                System.out.println("Выбор не верный.");
         }
     }
     public static String choice2(int choice, String firstNum) {
