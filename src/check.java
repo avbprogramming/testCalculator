@@ -72,7 +72,7 @@ public class check {
         char[] firstNumCharArray = firstNum.toCharArray();
         for (int i = 0; i < firstNumCharArray.length; i++) {
             char num = firstNumCharArray[i];
-            if (num != '0' && num != '1' && num != '2' && num != '3' && num != '4' && num != '5' && num != '6' && num != '7' && num != '8' && num != '9' && num != '-') {
+            if (num != '-' && num != '0' && num != '1' && num != '2' && num != '3' && num != '4' && num != '5' && num != '6' && num != '7' && num != '8' && num != '9' && num != '-') {
                 return false;
             }
         }
@@ -81,7 +81,7 @@ public class check {
         char[] secondNumCharArray = secondNum.toCharArray();
         for (int i = 0; i < secondNumCharArray.length; i++) {
             char num = secondNumCharArray[i];
-            if (num != '0' && num != '1' && num != '2' && num != '3' && num != '4' && num != '5' && num != '6' && num != '7' && num != '8' && num != '9' && num != '-') {
+            if (num != '-' && num != '0' && num != '1' && num != '2' && num != '3' && num != '4' && num != '5' && num != '6' && num != '7' && num != '8' && num != '9' && num != '-') {
                 return false;
             }
         }

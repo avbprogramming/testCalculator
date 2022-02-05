@@ -57,7 +57,7 @@ public class mathFunction {
 
         } else {
 
-            if (!check.checkDecimalMath(firstNum, secondNum)) {
+            if (!secondNum.equals('0') || !check.checkDecimalMath(firstNum, secondNum)) {
                 System.out.println("Введенные данные не верны");
             } else {
                 int num1 = Integer.parseInt(firstNum);
