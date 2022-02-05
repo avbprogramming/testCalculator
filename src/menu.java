@@ -1,9 +1,9 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class menu {
-    public static void menu (){
-        System.out.println("Добро пожаловать. ");
-        System.out.println("Данная программа - может выполнять некоторые математические вычисления с двумя числами. Больше или равно 0.");
+    public static void menu() {
+
         System.out.println("Список доступных операций: ");
         System.out.println("1 ---> Сложение.");
         System.out.println("2 ---> Вычитание.");
@@ -20,4 +20,48 @@ public class menu {
         System.out.println("13 ---> Выход.");
         System.out.print("Какую операцию над числами вы хотели бы провести? ");
     }
+
+    public static int begin() {
+
+        Scanner sc = new Scanner(System.in);
+        int num = 0;
+
+        try {
+            num = sc.nextInt();
+            if (num < 1 || num > 14) {
+                System.out.print("Не верный выбор.");
+                menu();
+                begin();
+            }
+            if (num < 5) {
+                System.out.print("Введите первое число: ");
+                sc.nextLine();
+                String firstNum = sc.nextLine();
+                System.out.print("Введите второе число: ");
+                String secondNum = sc.nextLine();
+                choice.choice(num, firstNum, secondNum);
+                menu();
+            }
+
+            if (num > 4 && num < 13) {
+                System.out.print("Введите число: ");
+                sc.nextLine();
+                String firstNum = sc.nextLine();
+                System.out.println(choice.choice2(num, firstNum));
+                menu();
+            }
+            if (num == 13) {
+                System.out.println("Всего наилучшего");
+            }
+             else {
+                begin();
+            }
+        } catch (InputMismatchException e) {
+            System.out.print("Введенные данные не верны. Диапазон выбора от 1 до 13.");
+            menu.menu();
+            begin();
+        }
+        return num;
+    }
+
 }

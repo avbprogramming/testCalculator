@@ -19,6 +19,7 @@ public class choice {
                 System.out.println("Выбор не верный.");
         }
     }
+
     public static String choice2(int choice, String firstNum) {
         String answer = "";
         switch (choice) {
@@ -35,20 +36,22 @@ public class choice {
                 answer = heXtoBinary.toBinary(firstNum);
                 break;
             case (9):
-                 answer = octalToDecimal.toOctal(firstNum);
+                answer = octalToDecimal.toOctal(firstNum);
                 break;
             case (10):
-                 answer = decimalToOctal.toDecimal(firstNum);
+                answer = decimalToOctal.toDecimal(firstNum);
                 break;
             case (11):
-                 answer = decimalToHex.toHex(firstNum);
+                answer = decimalToHex.toHex(firstNum);
                 break;
             case (12):
-                 answer = hexToDecimal.toDecimal(firstNum);
+                answer = hexToDecimal.toDecimal(firstNum);
                 break;
-            case (13): break;
-                default:
+            case (13):
+                break;
+            default: {
                 System.out.println("Выбор не верный. ");
+            }
         }
         return answer;
     }

@@ -11,7 +11,8 @@ public class mathFunction {
                 int num1 = Integer.parseInt(firstNum);
                 int num2 = Integer.parseInt(secondNum);
                 int answer = num1 + num2;
-                System.out.println(answer);
+                System.out.println("Ответ: " + answer);
+
             }
         }
     }
@@ -28,7 +29,8 @@ public class mathFunction {
                 int num1 = Integer.parseInt(firstNum);
                 int num2 = Integer.parseInt(secondNum);
                 int answer = num1 - num2;
-                System.out.println(answer);
+                System.out.println("Ответ: " + answer);
+
             }
         }
     }
@@ -46,7 +48,8 @@ public class mathFunction {
                 int num1 = Integer.parseInt(firstNum);
                 int num2 = Integer.parseInt(secondNum);
                 int answer = num1 * num2;
-                System.out.println(answer);
+                System.out.println("Ответ: " + answer);
+
             }
         }
 
@@ -57,13 +60,14 @@ public class mathFunction {
 
         } else {
 
-            if (!secondNum.equals('0') || !check.checkDecimalMath(firstNum, secondNum)) {
+            if (!check.checkDecimalMath(firstNum, secondNum) && (!secondNum.equals('0'))) {
                 System.out.println("Введенные данные не верны");
             } else {
                 int num1 = Integer.parseInt(firstNum);
                 int num2 = Integer.parseInt(secondNum);
                 int answer = num1 / num2;
-                System.out.println(answer);
+                System.out.println("Ответ: " + answer);
+
             }
         }
     }
