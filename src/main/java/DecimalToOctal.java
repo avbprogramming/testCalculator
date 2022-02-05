@@ -12,13 +12,13 @@ while(восьмеричное число не равно 0) {
 i увеличиваем на 1
 }
  */
-public class decimalToOctal {
+public class DecimalToOctal {
 
     public static String toDecimal(String octalNum) {
-        if (!check.checkEmptyString(octalNum)){
+        if (!Check.checkEmptyString(octalNum)){
             return "Пустая строка";
         }
-        if(!check.checkOctal(octalNum)){
+        if(!Check.checkOctal(octalNum)){
             return "Введены не верные данные";
         }
         int octalNumber =  Integer.parseInt(octalNum);

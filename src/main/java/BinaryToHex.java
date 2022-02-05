@@ -17,7 +17,7 @@
 
  */
 
-public class binaryToHex {
+public class BinaryToHex {
     /*
     public static void main(String[] args) {
        // String binaryNumber = "100111010000";
@@ -26,11 +26,11 @@ public class binaryToHex {
     }
      */
     public static String toHex(String binaryNumber) {
-        if (!check.checkEmptyString(binaryNumber)){
+        if (!Check.checkEmptyString(binaryNumber)){
             return "Пустая строка";
         }
         // проверка входной строки на содержание только 0 и 1
-        if (!check.checkBinary(binaryNumber)){
+        if (!Check.checkBinary(binaryNumber)){
             return "В строке есть неверные символы";
         }
         // перевод входной строки в массив символов

@@ -1,5 +1,5 @@
 
-public class check {
+public class Check {
     public static boolean checkEmptyString(String firstNum) {
         if (firstNum == null || firstNum.isEmpty()) {
             return false;

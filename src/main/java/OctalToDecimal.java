@@ -19,12 +19,12 @@ i увеличиваем на 1
         }
 */
 
-public class octalToDecimal {
+public class OctalToDecimal {
     public static String toOctal(String firstNum) {
-        if (!check.checkEmptyString(firstNum)){
+        if (!Check.checkEmptyString(firstNum)){
             return "Пустая строка";
         }
-        if(!check.checkOctal(firstNum)){
+        if(!Check.checkOctal(firstNum)){
             return "Введены не верные данные";
         }
         int decimalNumber =  Integer.parseInt(firstNum);

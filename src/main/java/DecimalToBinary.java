@@ -19,7 +19,7 @@ Requirements:
 5. Объект типа BigDecimal использовать нельзя.
  */
 
-public class decimalToBinary {
+public class DecimalToBinary {
     /*
         public static void main(String[] args) {
         int decimalNumber = Integer.MAX_VALUE;
@@ -27,10 +27,10 @@ public class decimalToBinary {
     }
 */
     public static String toBinary(String firstNum) {
-        if (!check.checkEmptyString(firstNum)){
+        if (!Check.checkEmptyString(firstNum)){
             return "Пустая строка";
         }
-        if (!check.checkDecimal(firstNum)){
+        if (!Check.checkDecimal(firstNum)){
             return "В строке есть неверные символы";
         }
         int decimalNumber = Integer.parseInt(firstNum);

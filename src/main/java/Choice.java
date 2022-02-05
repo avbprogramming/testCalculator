@@ -1,19 +1,19 @@
-public class choice {
+public class Choice {
 
     public static void choice(int choice, String firstNum, String secondNum) {
 
         switch (choice) {
             case (1):
-                mathFunction.plus(firstNum, secondNum);
+                MathFunction.plus(firstNum, secondNum);
                 break;
             case (2):
-                mathFunction.minus(firstNum, secondNum);
+                MathFunction.minus(firstNum, secondNum);
                 break;
             case (3):
-                mathFunction.multiply(firstNum, secondNum);
+                MathFunction.multiply(firstNum, secondNum);
                 break;
             case (4):
-                mathFunction.divide(firstNum, secondNum);
+                MathFunction.divide(firstNum, secondNum);
                 break;
             default:
                 System.out.println("Выбор не верный.");
@@ -24,28 +24,28 @@ public class choice {
         String answer = "";
         switch (choice) {
             case (5):
-                answer = binaryToDecimal.toDecimal(firstNum);
+                answer = BinaryToDecimal.toDecimal(firstNum);
                 break;
             case (6):
-                answer = decimalToBinary.toBinary(firstNum);
+                answer = DecimalToBinary.toBinary(firstNum);
                 break;
             case (7):
-                answer = binaryToHex.toHex(firstNum);
+                answer = BinaryToHex.toHex(firstNum);
                 break;
             case (8):
-                answer = heXtoBinary.toBinary(firstNum);
+                answer = HeXtoBinary.toBinary(firstNum);
                 break;
             case (9):
-                answer = octalToDecimal.toOctal(firstNum);
+                answer = OctalToDecimal.toOctal(firstNum);
                 break;
             case (10):
-                answer = decimalToOctal.toDecimal(firstNum);
+                answer = DecimalToOctal.toDecimal(firstNum);
                 break;
             case (11):
-                answer = decimalToHex.toHex(firstNum);
+                answer = DecimalToHex.toHex(firstNum);
                 break;
             case (12):
-                answer = hexToDecimal.toDecimal(firstNum);
+                answer = HexToDecimal.toDecimal(firstNum);
                 break;
             case (13):
                 break;

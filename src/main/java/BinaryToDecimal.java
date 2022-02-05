@@ -21,7 +21,7 @@ Requirements:
 4. Объект типа BigInteger использовать нельзя.
 5. Объект типа BigDecimal использовать нельзя.
  */
-public class binaryToDecimal {
+public class BinaryToDecimal {
     /*
         public static void main(String[] args) {
         String binaryNumber = "1111111111111111111111111111111";
@@ -29,10 +29,10 @@ public class binaryToDecimal {
     }
 */
     public static String toDecimal(String binaryNumber) {
-        if (!check.checkEmptyString(binaryNumber)) {
+        if (!Check.checkEmptyString(binaryNumber)) {
             return "Пустая строка";
         }
-        if (!check.checkBinary(binaryNumber)) {
+        if (!Check.checkBinary(binaryNumber)) {
             return "Введены не верные данные";
         }
         int decimalNum = 0;

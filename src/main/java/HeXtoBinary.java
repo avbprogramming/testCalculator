@@ -1,4 +1,4 @@
-public class heXtoBinary {
+public class HeXtoBinary {
 
 /*
 Двоично-шестнадцатеричный конвертер
@@ -31,10 +31,10 @@ public class heXtoBinary {
 
         String answer = "";
         char[] hexNumberChar = hexNumber.toCharArray();
-        if (!check.checkEmptyString(hexNumber)) {
+        if (!Check.checkEmptyString(hexNumber)) {
             return "Пустая строка";
         }
-        if (!check.checkHex(hexNumber)){
+        if (!Check.checkHex(hexNumber)){
             return "Введены не верные данные";
         }
 

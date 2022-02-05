@@ -1,7 +1,7 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class menu {
+public class Menu {
     public static void menu() {
 
         System.out.println("Список доступных операций: ");
@@ -39,7 +39,7 @@ public class menu {
                 String firstNum = sc.nextLine();
                 System.out.print("Введите второе число: ");
                 String secondNum = sc.nextLine();
-                choice.choice(num, firstNum, secondNum);
+                Choice.choice(num, firstNum, secondNum);
                 menu();
             }
 
@@ -47,7 +47,7 @@ public class menu {
                 System.out.print("Введите число: ");
                 sc.nextLine();
                 String firstNum = sc.nextLine();
-                System.out.println(choice.choice2(num, firstNum));
+                System.out.println(Choice.choice2(num, firstNum));
                 menu();
             }
             if (num == 13) {
@@ -58,7 +58,7 @@ public class menu {
             }
         } catch (InputMismatchException e) {
             System.out.print("Введенные данные не верны. Диапазон выбора от 1 до 13.");
-            menu.menu();
+            Menu.menu();
             begin();
         }
         return num;

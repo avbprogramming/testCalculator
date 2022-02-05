@@ -16,19 +16,19 @@ for (int i = 0; i < длина входящей строки; i++) {
 
  */
 
-public class hexToDecimal {
+public class HexToDecimal {
     // public static String toDecimal (String hexNum) {
     public static String toDecimal(String hexNumber) {
-        if (!check.checkEmptyString(hexNumber)) {
+        if (!Check.checkEmptyString(hexNumber)) {
             return "Пустая строка";
         }
-        if (!check.checkHex(hexNumber)) {
+        if (!Check.checkHex(hexNumber)) {
             return "В строке есть неверные символы";
         }
         int toDecimalNum = 0;
         for (int i = 0; i < hexNumber.length(); i++) {
             char j = hexNumber.charAt(i);
-            int n = decimalToHex.HEX.indexOf(j);
+            int n = DecimalToHex.HEX.indexOf(j);
             toDecimalNum = (16 * toDecimalNum + (n));
         }
         return String.valueOf(toDecimalNum);

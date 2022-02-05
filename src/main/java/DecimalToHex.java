@@ -22,14 +22,14 @@ while(десятичное число не равно 0) {
     }
 
  */
-public class decimalToHex {
+public class DecimalToHex {
     final static String HEX = "0123456789abcdef";
     public static String toHex(String firstNum) {
         String hexNum = "";
-        if (!check.checkEmptyString(firstNum)) {
+        if (!Check.checkEmptyString(firstNum)) {
             return "Пустая строка";
         }
-    if (!check.checkDecimal(firstNum)){
+    if (!Check.checkDecimal(firstNum)){
         return "Введены не верные данные";
         }
 
