@@ -7,14 +7,13 @@ public class CheckTest {
     @Test
     public void checkEmptyString() {
         assertEquals("", "");
-        assertEquals(null, null);
         assertEquals("a", "a");
     }
 
     @Test
     public void testCheckEmptyString() {
         assertEquals("", "");
-        assertEquals(false, false);
+        assertFalse(false);
         assertEquals("a", "a");
     }
 
