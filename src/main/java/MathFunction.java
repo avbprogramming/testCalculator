@@ -10,8 +10,7 @@ public class MathFunction {
             } else {
                 int num1 = Integer.parseInt(firstNum);
                 int num2 = Integer.parseInt(secondNum);
-                int answer = num1 + num2;
-                System.out.println("Ответ: " + answer);
+                System.out.println("Ответ: " + (num1 + num2));
 
             }
         }
@@ -28,8 +27,7 @@ public class MathFunction {
             } else {
                 int num1 = Integer.parseInt(firstNum);
                 int num2 = Integer.parseInt(secondNum);
-                int answer = num1 - num2;
-                System.out.println("Ответ: " + answer);
+                System.out.println("Ответ: " + (num1 - num2));
 
             }
         }
@@ -47,8 +45,7 @@ public class MathFunction {
         } else {
             int num1 = Integer.parseInt(firstNum);
             int num2 = Integer.parseInt(secondNum);
-            int answer = num1 * num2;
-            System.out.println("Ответ: " + answer);
+            System.out.println("Ответ: " + (num1 * num2));
 
         }
     }
