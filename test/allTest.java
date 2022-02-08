@@ -129,10 +129,12 @@ public class allTest {
     }
 
     @Test
-    public void Menu(){
-        int num = Menu.begin();
-        Assert.assertNotEquals("22", num);
-    }
+    public void MenuBegin(){
+          Menu menuChoice = new Menu();
+          menuChoice.begin = (1);
+
+
+     }
 
 
 }
