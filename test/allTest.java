@@ -84,7 +84,8 @@ public class allTest {
     @Test
     public void choiceTest(){
         Choice choice = new Choice();
-
+            Choice.choice(1, "22", "11");
+            Assert.assertEquals("Ответ: 33" , choice);
     }
 
 
