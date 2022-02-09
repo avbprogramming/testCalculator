@@ -128,13 +128,16 @@ public class allTest {
         Assert.assertNotEquals("22", choice1);
     }
 
-    @Test
-    public void MenuBegin(){
-          Menu menuChoice = new Menu();
-          menuChoice.begin = (1);
-
-
+     // @Test
+     //  public void MenuBegin() {
+     //   Menu.begin();
+     //   int num = Menu.begin();
+     //   Assert.assertEquals(3, num);
+     // }
+     @Test
+     public void start() {
+        String[] hello = {"hello"};
+        Start.main(hello);
      }
-
 
 }
