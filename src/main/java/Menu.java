@@ -33,7 +33,7 @@ public class Menu {
                 menu();
                 begin();
             }
-            if (num < 5) {
+           else  if (num < 5) {
                 System.out.print("Введите первое число: ");
                 sc.nextLine();
                 String firstNum = sc.nextLine();
@@ -43,14 +43,14 @@ public class Menu {
                 menu();
             }
 
-            if (num > 4 && num < 13) {
+            else if (num > 4 && num < 13) {
                 System.out.print("Введите число: ");
                 sc.nextLine();
                 String firstNum = sc.nextLine();
                 System.out.println(Choice.choice2(num, firstNum));
                 menu();
             }
-            if (num == 13) {
+           else  if (num == 13) {
                 System.out.println("Всего наилучшего");
             }
              else {

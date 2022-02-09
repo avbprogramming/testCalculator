@@ -136,6 +136,8 @@ public class allTest {
      // }
      @Test
      public void start() {
+
+        // вытащить сканер, вызвать его в begin . Сдесь создать метод бегин, и передать туда число. В бегин финукции передать значения со сканера.
         String[] hello = {"hello"};
         Start.main(hello);
      }

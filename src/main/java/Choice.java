@@ -3,20 +3,11 @@ public class Choice {
     public static void choice(int choice, String firstNum, String secondNum) {
 
         switch (choice) {
-            case (1):
-                MathFunction.plus(firstNum, secondNum);
-                break;
-            case (2):
-                MathFunction.minus(firstNum, secondNum);
-                break;
-            case (3):
-                MathFunction.multiply(firstNum, secondNum);
-                break;
-            case (4):
-                MathFunction.divide(firstNum, secondNum);
-                break;
-            default:
-                System.out.println("Выбор не верный.");
+            case (1) -> MathFunction.plus(firstNum, secondNum);
+            case (2) -> MathFunction.minus(firstNum, secondNum);
+            case (3) -> MathFunction.multiply(firstNum, secondNum);
+            case (4) -> MathFunction.divide(firstNum, secondNum);
+            default -> System.out.println("Выбор не верный.");
         }
     }
 
